@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-labelledby="title desc">
+  <title id="title">Table of library activity</title>
+  <desc id="desc">A table compares visits, loans, and computer sessions in three towns.</desc>
+  <rect width="720" height="420" fill="#ffffff"/>
+  <text x="42" y="44" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#17211c">Library activity in 2024</text>
+  <g transform="translate(70 86)" font-family="Arial, sans-serif">
+    <rect width="580" height="264" fill="#ffffff" stroke="#9aa7a0" stroke-width="2"/>
+    <rect width="580" height="54" fill="#eaf4f1"/>
+    <g stroke="#9aa7a0" stroke-width="1">
+      <line x1="0" y1="54" x2="580" y2="54"/>
+      <line x1="0" y1="124" x2="580" y2="124"/>
+      <line x1="0" y1="194" x2="580" y2="194"/>
+      <line x1="145" y1="0" x2="145" y2="264"/>
+      <line x1="290" y1="0" x2="290" y2="264"/>
+      <line x1="435" y1="0" x2="435" y2="264"/>
+    </g>
+    <g font-size="15" font-weight="700" fill="#17211c">
+      <text x="72" y="34" text-anchor="middle">Town</text>
+      <text x="217" y="34" text-anchor="middle">Visits</text>
+      <text x="362" y="34" text-anchor="middle">Book loans</text>
+      <text x="507" y="25" text-anchor="middle">Computer</text>
+      <text x="507" y="43" text-anchor="middle">sessions</text>
+    </g>
+    <g font-size="16" fill="#17211c">
+      <text x="72" y="96" text-anchor="middle">Northport</text>
+      <text x="217" y="96" text-anchor="middle">82,000</text>
+      <text x="362" y="96" text-anchor="middle">118,000</text>
+      <text x="507" y="96" text-anchor="middle">35,000</text>
+      <text x="72" y="166" text-anchor="middle">Eastford</text>
+      <text x="217" y="166" text-anchor="middle">65,000</text>
+      <text x="362" y="166" text-anchor="middle">76,000</text>
+      <text x="507" y="166" text-anchor="middle">41,000</text>
+      <text x="72" y="236" text-anchor="middle">Southvale</text>
+      <text x="217" y="236" text-anchor="middle">49,000</text>
+      <text x="362" y="236" text-anchor="middle">52,000</text>
+      <text x="507" y="236" text-anchor="middle">24,000</text>
+    </g>
+  </g>
+</svg>
+

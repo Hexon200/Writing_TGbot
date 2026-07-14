@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-labelledby="title desc">
+  <title id="title">Pie charts of household energy use</title>
+  <desc id="desc">Two donut charts compare household energy categories in 2010 and 2024.</desc>
+  <rect width="720" height="420" fill="#ffffff"/>
+  <text x="42" y="42" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#17211c">Household energy use</text>
+  <g transform="translate(210 218)">
+    <text x="0" y="-135" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#17211c">2010</text>
+    <circle r="104" fill="none" stroke="#1b7f6e" stroke-width="52" stroke-dasharray="300 354" transform="rotate(-90)"/>
+    <circle r="104" fill="none" stroke="#2f5fa8" stroke-width="52" stroke-dasharray="157 497" stroke-dashoffset="-300" transform="rotate(-90)"/>
+    <circle r="104" fill="none" stroke="#b26a00" stroke-width="52" stroke-dasharray="85 569" stroke-dashoffset="-457" transform="rotate(-90)"/>
+    <circle r="104" fill="none" stroke="#8b5cf6" stroke-width="52" stroke-dasharray="65 589" stroke-dashoffset="-542" transform="rotate(-90)"/>
+    <circle r="104" fill="none" stroke="#b54747" stroke-width="52" stroke-dasharray="47 607" stroke-dashoffset="-607" transform="rotate(-90)"/>
+    <circle r="70" fill="#ffffff"/>
+  </g>
+  <g transform="translate(510 218)">
+    <text x="0" y="-135" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#17211c">2024</text>
+    <circle r="104" fill="none" stroke="#1b7f6e" stroke-width="52" stroke-dasharray="248 406" transform="rotate(-90)"/>
+    <circle r="104" fill="none" stroke="#2f5fa8" stroke-width="52" stroke-dasharray="150 504" stroke-dashoffset="-248" transform="rotate(-90)"/>
+    <circle r="104" fill="none" stroke="#b26a00" stroke-width="52" stroke-dasharray="78 576" stroke-dashoffset="-398" transform="rotate(-90)"/>
+    <circle r="104" fill="none" stroke="#8b5cf6" stroke-width="52" stroke-dasharray="111 543" stroke-dashoffset="-476" transform="rotate(-90)"/>
+    <circle r="104" fill="none" stroke="#b54747" stroke-width="52" stroke-dasharray="78 576" stroke-dashoffset="-587" transform="rotate(-90)"/>
+    <circle r="70" fill="#ffffff"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="13" fill="#17211c">
+    <rect x="220" y="360" width="13" height="13" fill="#1b7f6e"/><text x="240" y="372">Heating</text>
+    <rect x="315" y="360" width="13" height="13" fill="#2f5fa8"/><text x="335" y="372">Water</text>
+    <rect x="400" y="360" width="13" height="13" fill="#b26a00"/><text x="420" y="372">Cooking</text>
+    <rect x="490" y="360" width="13" height="13" fill="#8b5cf6"/><text x="510" y="372">Electronics</text>
+    <rect x="600" y="360" width="13" height="13" fill="#b54747"/><text x="620" y="372">Cooling</text>
+  </g>
+</svg>
+

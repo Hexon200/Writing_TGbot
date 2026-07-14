@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>IELTS Writing Helper</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand-row">
+          <div>
+            <div class="eyebrow">IELTS Writing</div>
+            <h1 id="viewTitle">Task 1</h1>
+          </div>
+          <button id="syncButton" class="icon-button" type="button" title="Refresh">↻</button>
+        </div>
+        <label class="search-box">
+          <span>⌕</span>
+          <input id="globalSearch" type="search" autocomplete="off" placeholder="Search samples, phrases, tips">
+        </label>
+      </header>
+
+      <section id="searchResults" class="search-results hidden"></section>
+      <main id="content" class="content" tabindex="-1"></main>
+
+      <nav class="tabbar" aria-label="Main">
+        <button type="button" class="tab active" data-tab="task1">Task 1</button>
+        <button type="button" class="tab" data-tab="task2">Task 2</button>
+        <button type="button" class="tab" data-tab="phrases">Phrases</button>
+        <button type="button" class="tab" data-tab="tips">Tips</button>
+        <button type="button" class="tab" data-tab="bookmarks">Bookmarks</button>
+      </nav>
+    </div>
+
+    <div id="sheetBackdrop" class="sheet-backdrop hidden"></div>
+    <section id="phraseSheet" class="phrase-sheet hidden" aria-live="polite"></section>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
+

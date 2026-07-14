@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-labelledby="title desc">
+  <title id="title">Process diagram for recycling glass bottles</title>
+  <desc id="desc">Seven connected stages show glass bottle recycling.</desc>
+  <rect width="720" height="420" fill="#ffffff"/>
+  <text x="42" y="42" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#17211c">Glass bottle recycling process</text>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#67716b"/>
+    </marker>
+  </defs>
+  <g font-family="Arial, sans-serif" font-size="14" fill="#17211c">
+    <g fill="#eaf4f1" stroke="#1b7f6e" stroke-width="2">
+      <rect x="52" y="100" width="120" height="58" rx="8"/>
+      <rect x="218" y="100" width="120" height="58" rx="8"/>
+      <rect x="384" y="100" width="120" height="58" rx="8"/>
+      <rect x="550" y="100" width="120" height="58" rx="8"/>
+      <rect x="384" y="242" width="120" height="58" rx="8"/>
+      <rect x="218" y="242" width="120" height="58" rx="8"/>
+      <rect x="52" y="242" width="120" height="58" rx="8"/>
+    </g>
+    <text x="112" y="125" text-anchor="middle">Collect</text>
+    <text x="112" y="144" text-anchor="middle">bottles</text>
+    <text x="278" y="125" text-anchor="middle">Transport</text>
+    <text x="278" y="144" text-anchor="middle">to plant</text>
+    <text x="444" y="125" text-anchor="middle">Sort and</text>
+    <text x="444" y="144" text-anchor="middle">wash</text>
+    <text x="610" y="125" text-anchor="middle">Crush</text>
+    <text x="610" y="144" text-anchor="middle">glass</text>
+    <text x="444" y="267" text-anchor="middle">Melt and</text>
+    <text x="444" y="286" text-anchor="middle">mould</text>
+    <text x="278" y="267" text-anchor="middle">Fill and</text>
+    <text x="278" y="286" text-anchor="middle">label</text>
+    <text x="112" y="267" text-anchor="middle">Deliver</text>
+    <text x="112" y="286" text-anchor="middle">to shops</text>
+  </g>
+  <g fill="none" stroke="#67716b" stroke-width="2.5" marker-end="url(#arrow)">
+    <path d="M172 129 H214"/>
+    <path d="M338 129 H380"/>
+    <path d="M504 129 H546"/>
+    <path d="M610 158 V210 C610 232 536 234 508 256"/>
+    <path d="M384 271 H342"/>
+    <path d="M218 271 H176"/>
+    <path d="M92 242 C54 206 54 182 92 158"/>
+  </g>
+</svg>
+

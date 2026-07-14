@@ -1,0 +1,973 @@
+{
+  "phrases": [
+    {
+      "slug": "rose-steadily",
+      "category": "describing_trends",
+      "phrase": "rose steadily",
+      "example": "The proportion of commuters who cycled to work rose steadily throughout the period.",
+      "band_note": "Clear and safe for Task 1 trend description.",
+      "related_slugs": ["increased-sharply", "upward-trend", "levelled-off"]
+    },
+    {
+      "slug": "increased-sharply",
+      "category": "describing_trends",
+      "phrase": "increased sharply",
+      "example": "Spending on online advertising increased sharply after 2018.",
+      "band_note": "Use when the change is large and quick.",
+      "related_slugs": ["rose-steadily", "reached-a-peak"]
+    },
+    {
+      "slug": "declined-gradually",
+      "category": "describing_trends",
+      "phrase": "declined gradually",
+      "example": "The share of print newspaper readers declined gradually over the decade.",
+      "band_note": "Good for moderate downward movement.",
+      "related_slugs": ["downward-trend", "hit-a-low"]
+    },
+    {
+      "slug": "remained-stable",
+      "category": "describing_trends",
+      "phrase": "remained stable",
+      "example": "The figure for gas consumption remained stable at about 40 units.",
+      "band_note": "Avoid if there are clear fluctuations.",
+      "related_slugs": ["levelled-off"]
+    },
+    {
+      "slug": "fluctuated-noticeably",
+      "category": "describing_trends",
+      "phrase": "fluctuated noticeably",
+      "example": "Visitor numbers fluctuated noticeably before recovering in the final year.",
+      "band_note": "Useful when there is no single steady direction.",
+      "related_slugs": ["hit-a-low", "reached-a-peak"]
+    },
+    {
+      "slug": "reached-a-peak",
+      "category": "describing_trends",
+      "phrase": "reached a peak",
+      "example": "Revenue reached a peak of 2.4 million dollars in 2022.",
+      "band_note": "Include the value and time if the chart provides them.",
+      "related_slugs": ["hit-a-low", "levelled-off"]
+    },
+    {
+      "slug": "hit-a-low",
+      "category": "describing_trends",
+      "phrase": "hit a low",
+      "example": "The unemployment rate hit a low of 3 percent in July.",
+      "band_note": "Best for the lowest point on a line graph.",
+      "related_slugs": ["reached-a-peak", "downward-trend"]
+    },
+    {
+      "slug": "levelled-off",
+      "category": "describing_trends",
+      "phrase": "levelled off",
+      "example": "After a sharp rise, the number of users levelled off at around 80,000.",
+      "band_note": "British spelling is fine for IELTS.",
+      "related_slugs": ["remained-stable", "rose-steadily"]
+    },
+    {
+      "slug": "upward-trend",
+      "category": "describing_trends",
+      "phrase": "an upward trend",
+      "example": "The data show an upward trend in public transport use.",
+      "band_note": "General summary phrase for an overview.",
+      "related_slugs": ["rose-steadily", "overall"]
+    },
+    {
+      "slug": "downward-trend",
+      "category": "describing_trends",
+      "phrase": "a downward trend",
+      "example": "There was a downward trend in the use of landline phones.",
+      "band_note": "General summary phrase for an overview.",
+      "related_slugs": ["declined-gradually", "overall"]
+    },
+    {
+      "slug": "marginal-increase",
+      "category": "describing_trends",
+      "phrase": "a marginal increase",
+      "example": "The figure saw only a marginal increase, from 31 to 33 percent.",
+      "band_note": "Useful for small changes that should not be overstated.",
+      "related_slugs": ["roughly-twice-as-high-as"]
+    },
+    {
+      "slug": "by-contrast",
+      "category": "comparing_contrasting",
+      "phrase": "by contrast",
+      "example": "By contrast, the figure for rural households was considerably lower.",
+      "band_note": "Natural for Task 1 and Task 2 comparisons.",
+      "related_slugs": ["whereas", "in-contrast"]
+    },
+    {
+      "slug": "whereas",
+      "category": "comparing_contrasting",
+      "phrase": "whereas",
+      "example": "The north received 40 percent of investment, whereas the south received just 18 percent.",
+      "band_note": "Join two directly contrasting clauses.",
+      "related_slugs": ["by-contrast", "in-contrast"]
+    },
+    {
+      "slug": "respectively",
+      "category": "comparing_contrasting",
+      "phrase": "respectively",
+      "example": "Japan and Korea recorded figures of 22 and 28 percent, respectively.",
+      "band_note": "Use only when the order is unmistakable.",
+      "related_slugs": ["the-figure-for"]
+    },
+    {
+      "slug": "a-similar-pattern",
+      "category": "comparing_contrasting",
+      "phrase": "a similar pattern",
+      "example": "A similar pattern can be seen in the figures for part-time work.",
+      "band_note": "Useful for grouping related data.",
+      "related_slugs": ["compared-with", "in-terms-of"]
+    },
+    {
+      "slug": "far-higher-than",
+      "category": "comparing_contrasting",
+      "phrase": "far higher than",
+      "example": "Car use was far higher than bicycle use in every year shown.",
+      "band_note": "Only use when the difference is clearly large.",
+      "related_slugs": ["roughly-twice-as-high-as", "the-gap-widened"]
+    },
+    {
+      "slug": "roughly-twice-as-high-as",
+      "category": "comparing_contrasting",
+      "phrase": "roughly twice as high as",
+      "example": "The figure for men was roughly twice as high as that for women.",
+      "band_note": "Good numerical comparison when exact precision is not needed.",
+      "related_slugs": ["far-higher-than", "the-figure-for"]
+    },
+    {
+      "slug": "the-gap-widened",
+      "category": "comparing_contrasting",
+      "phrase": "the gap widened",
+      "example": "The gap widened after 2015 as online sales accelerated.",
+      "band_note": "Good for comparing two changing lines.",
+      "related_slugs": ["whereas", "far-higher-than"]
+    },
+    {
+      "slug": "the-figure-for",
+      "category": "comparing_contrasting",
+      "phrase": "the figure for",
+      "example": "The figure for Canada was 12 percentage points higher than that for France.",
+      "band_note": "Core Task 1 phrase; vary it with proportion, rate, number, or share.",
+      "related_slugs": ["compared-with", "in-terms-of"]
+    },
+    {
+      "slug": "compared-with",
+      "category": "comparing_contrasting",
+      "phrase": "compared with",
+      "example": "Compared with private cars, buses produced far fewer emissions per passenger.",
+      "band_note": "Natural alternative to compared to in formal writing.",
+      "related_slugs": ["whereas", "the-figure-for"]
+    },
+    {
+      "slug": "in-terms-of",
+      "category": "comparing_contrasting",
+      "phrase": "in terms of",
+      "example": "In terms of overall cost, online courses were the cheapest option.",
+      "band_note": "Do not overuse; it can become repetitive.",
+      "related_slugs": ["compared-with", "a-similar-pattern"]
+    },
+    {
+      "slug": "i-firmly-believe",
+      "category": "giving_opinion",
+      "phrase": "I firmly believe",
+      "example": "I firmly believe that governments should invest more in preventive healthcare.",
+      "band_note": "Clear opinion phrase for agree-disagree essays.",
+      "related_slugs": ["from-my-perspective", "on-balance"]
+    },
+    {
+      "slug": "it-is-reasonable-to-argue",
+      "category": "giving_opinion",
+      "phrase": "it is reasonable to argue",
+      "example": "It is reasonable to argue that practical training should complement academic study.",
+      "band_note": "More balanced than overly forceful opinion language.",
+      "related_slugs": ["to-some-extent", "from-my-perspective"]
+    },
+    {
+      "slug": "from-my-perspective",
+      "category": "giving_opinion",
+      "phrase": "from my perspective",
+      "example": "From my perspective, the benefits of flexible work outweigh the drawbacks.",
+      "band_note": "Suitable for Task 2; avoid stacking many opinion phrases.",
+      "related_slugs": ["i-firmly-believe", "outweigh-the-drawbacks"]
+    },
+    {
+      "slug": "i-partially-agree",
+      "category": "giving_opinion",
+      "phrase": "I partially agree",
+      "example": "I partially agree with this view because the policy is useful but incomplete.",
+      "band_note": "Use only when your essay really takes a balanced position.",
+      "related_slugs": ["to-some-extent", "on-balance"]
+    },
+    {
+      "slug": "the-main-reason-is",
+      "category": "giving_opinion",
+      "phrase": "the main reason is",
+      "example": "The main reason is that early intervention is cheaper than emergency treatment.",
+      "band_note": "Good topic-sentence support phrase.",
+      "related_slugs": ["for-instance", "therefore"]
+    },
+    {
+      "slug": "this-essay-will-argue",
+      "category": "giving_opinion",
+      "phrase": "this essay will argue",
+      "example": "This essay will argue that the advantages of remote work are greater overall.",
+      "band_note": "Acceptable, but a direct thesis often sounds more natural.",
+      "related_slugs": ["i-firmly-believe", "on-balance"]
+    },
+    {
+      "slug": "tends-to",
+      "category": "hedging",
+      "phrase": "tends to",
+      "example": "Excessive screen time tends to reduce the quality of children's sleep.",
+      "band_note": "Useful hedge when a claim is generally true but not universal.",
+      "related_slugs": ["in-many-cases", "is-likely-to"]
+    },
+    {
+      "slug": "appears-to",
+      "category": "hedging",
+      "phrase": "appears to",
+      "example": "The policy appears to benefit larger cities more than rural areas.",
+      "band_note": "Good for cautious interpretation of data.",
+      "related_slugs": ["this-suggests-that", "to-some-extent"]
+    },
+    {
+      "slug": "may-lead-to",
+      "category": "hedging",
+      "phrase": "may lead to",
+      "example": "A lack of affordable housing may lead to longer commutes.",
+      "band_note": "Safer than claiming a guaranteed result.",
+      "related_slugs": ["as-a-result", "is-likely-to"]
+    },
+    {
+      "slug": "is-likely-to",
+      "category": "hedging",
+      "phrase": "is likely to",
+      "example": "Investment in public transport is likely to reduce congestion over time.",
+      "band_note": "Good for prediction and cause-effect claims.",
+      "related_slugs": ["may-lead-to", "tends-to"]
+    },
+    {
+      "slug": "in-many-cases",
+      "category": "hedging",
+      "phrase": "in many cases",
+      "example": "In many cases, parents need guidance rather than punishment.",
+      "band_note": "Avoid overgeneralising with always or never.",
+      "related_slugs": ["tends-to", "to-some-extent"]
+    },
+    {
+      "slug": "to-some-extent",
+      "category": "hedging",
+      "phrase": "to some extent",
+      "example": "To some extent, online learning can replace traditional lectures.",
+      "band_note": "Useful for partial agreement essays.",
+      "related_slugs": ["i-partially-agree", "on-balance"]
+    },
+    {
+      "slug": "overall",
+      "category": "concluding_overview",
+      "phrase": "overall",
+      "example": "Overall, the most notable change was the rapid growth of online sales.",
+      "band_note": "Essential for Task 1 overview paragraphs.",
+      "related_slugs": ["taken-together", "upward-trend"]
+    },
+    {
+      "slug": "in-conclusion",
+      "category": "concluding_overview",
+      "phrase": "in conclusion",
+      "example": "In conclusion, public health campaigns should be combined with better local facilities.",
+      "band_note": "Safe Task 2 conclusion opener.",
+      "related_slugs": ["on-balance", "taken-together"]
+    },
+    {
+      "slug": "taken-together",
+      "category": "concluding_overview",
+      "phrase": "taken together",
+      "example": "Taken together, the figures indicate a clear shift away from cash payments.",
+      "band_note": "Useful for summarising multiple data points.",
+      "related_slugs": ["overall", "this-suggests-that"]
+    },
+    {
+      "slug": "this-suggests-that",
+      "category": "concluding_overview",
+      "phrase": "this suggests that",
+      "example": "This suggests that convenience was the strongest driver of the change.",
+      "band_note": "Use for careful interpretation, not unsupported speculation.",
+      "related_slugs": ["appears-to", "taken-together"]
+    },
+    {
+      "slug": "on-balance",
+      "category": "concluding_overview",
+      "phrase": "on balance",
+      "example": "On balance, the educational benefits outweigh the possible disadvantages.",
+      "band_note": "Good for a final balanced judgement in Task 2.",
+      "related_slugs": ["outweigh-the-drawbacks", "in-conclusion"]
+    },
+    {
+      "slug": "moreover",
+      "category": "cohesion_linking",
+      "phrase": "moreover",
+      "example": "Moreover, well-designed parks can improve physical and mental health.",
+      "band_note": "Formal additive linker; use sparingly.",
+      "related_slugs": ["in-addition", "however"]
+    },
+    {
+      "slug": "however",
+      "category": "cohesion_linking",
+      "phrase": "however",
+      "example": "However, the same approach may be expensive in smaller towns.",
+      "band_note": "Strong contrast linker; punctuate carefully.",
+      "related_slugs": ["nevertheless", "by-contrast"]
+    },
+    {
+      "slug": "therefore",
+      "category": "cohesion_linking",
+      "phrase": "therefore",
+      "example": "Therefore, schools should teach digital literacy from an early age.",
+      "band_note": "Use when the conclusion follows logically.",
+      "related_slugs": ["as-a-result", "consequently"]
+    },
+    {
+      "slug": "as-a-result",
+      "category": "cohesion_linking",
+      "phrase": "as a result",
+      "example": "As a result, commuters spend less time in traffic.",
+      "band_note": "Clear cause-effect linker.",
+      "related_slugs": ["therefore", "consequently"]
+    },
+    {
+      "slug": "for-instance",
+      "category": "cohesion_linking",
+      "phrase": "for instance",
+      "example": "For instance, a city can reserve bus lanes during peak hours.",
+      "band_note": "Natural example linker for Task 2.",
+      "related_slugs": ["in-other-words", "the-main-reason-is"]
+    },
+    {
+      "slug": "in-addition",
+      "category": "cohesion_linking",
+      "phrase": "in addition",
+      "example": "In addition, the policy could reduce pressure on hospitals.",
+      "band_note": "Safe additive linker.",
+      "related_slugs": ["moreover", "however"]
+    },
+    {
+      "slug": "nevertheless",
+      "category": "cohesion_linking",
+      "phrase": "nevertheless",
+      "example": "Nevertheless, some students still need face-to-face guidance.",
+      "band_note": "Formal contrast; avoid using it every paragraph.",
+      "related_slugs": ["however", "in-contrast"]
+    },
+    {
+      "slug": "in-contrast",
+      "category": "cohesion_linking",
+      "phrase": "in contrast",
+      "example": "In contrast, public transport use increased in the same period.",
+      "band_note": "Useful for both charts and essays.",
+      "related_slugs": ["by-contrast", "whereas"]
+    },
+    {
+      "slug": "consequently",
+      "category": "cohesion_linking",
+      "phrase": "consequently",
+      "example": "Consequently, families with lower incomes may delay medical treatment.",
+      "band_note": "Formal cause-effect linker.",
+      "related_slugs": ["therefore", "as-a-result"]
+    },
+    {
+      "slug": "in-other-words",
+      "category": "cohesion_linking",
+      "phrase": "in other words",
+      "example": "In other words, the policy works only if it is affordable.",
+      "band_note": "Useful for clarifying an idea, not adding a new one.",
+      "related_slugs": ["for-instance", "therefore"]
+    },
+    {
+      "slug": "a-growing-number-of",
+      "category": "paraphrasing_prompts",
+      "phrase": "a growing number of",
+      "example": "A growing number of people now work from home at least once a week.",
+      "band_note": "Good paraphrase for more and more people.",
+      "related_slugs": ["younger-generations", "play-a-vital-role"]
+    },
+    {
+      "slug": "play-a-vital-role",
+      "category": "paraphrasing_prompts",
+      "phrase": "play a vital role",
+      "example": "Libraries play a vital role in giving children access to books.",
+      "band_note": "Formal and flexible; do not overuse vital.",
+      "related_slugs": ["practical-measures", "tackle-the-issue"]
+    },
+    {
+      "slug": "tackle-the-issue",
+      "category": "paraphrasing_prompts",
+      "phrase": "tackle the issue",
+      "example": "Local authorities need practical measures to tackle the issue of traffic congestion.",
+      "band_note": "Good paraphrase for solve the problem.",
+      "related_slugs": ["practical-measures", "may-lead-to"]
+    },
+    {
+      "slug": "outweigh-the-drawbacks",
+      "category": "paraphrasing_prompts",
+      "phrase": "outweigh the drawbacks",
+      "example": "The long-term benefits of renewable energy outweigh the drawbacks.",
+      "band_note": "Core phrase for advantage-disadvantage essays.",
+      "related_slugs": ["on-balance", "from-my-perspective"]
+    },
+    {
+      "slug": "practical-measures",
+      "category": "paraphrasing_prompts",
+      "phrase": "practical measures",
+      "example": "Practical measures such as safer crossings can reduce accidents.",
+      "band_note": "Useful in problem-solution essays.",
+      "related_slugs": ["tackle-the-issue", "therefore"]
+    },
+    {
+      "slug": "younger-generations",
+      "category": "paraphrasing_prompts",
+      "phrase": "younger generations",
+      "example": "Younger generations may need stronger financial education at school.",
+      "band_note": "Natural paraphrase for young people.",
+      "related_slugs": ["a-growing-number-of", "in-many-cases"]
+    },
+    {
+      "slug": "is-located",
+      "category": "maps_process",
+      "phrase": "is located",
+      "example": "The bus station is located to the east of the shopping centre.",
+      "band_note": "Core map-description phrase.",
+      "related_slugs": ["was-replaced-by", "in-contrast"]
+    },
+    {
+      "slug": "was-replaced-by",
+      "category": "maps_process",
+      "phrase": "was replaced by",
+      "example": "The old car park was replaced by a pedestrian plaza.",
+      "band_note": "Useful for map changes over time.",
+      "related_slugs": ["is-located", "overall"]
+    },
+    {
+      "slug": "after-being-processed",
+      "category": "maps_process",
+      "phrase": "after being processed",
+      "example": "After being processed, the beans are packed and sent to shops.",
+      "band_note": "Good passive structure for process diagrams.",
+      "related_slugs": ["the-first-stage", "subsequently"]
+    },
+    {
+      "slug": "the-first-stage",
+      "category": "maps_process",
+      "phrase": "the first stage",
+      "example": "The first stage is to collect the raw material from farms.",
+      "band_note": "Core process-sequencing phrase.",
+      "related_slugs": ["subsequently", "finally"]
+    },
+    {
+      "slug": "subsequently",
+      "category": "maps_process",
+      "phrase": "subsequently",
+      "example": "Subsequently, the mixture is heated for twenty minutes.",
+      "band_note": "Formal sequence linker for processes.",
+      "related_slugs": ["the-first-stage", "finally"]
+    },
+    {
+      "slug": "finally",
+      "category": "maps_process",
+      "phrase": "finally",
+      "example": "Finally, the finished product is stored in labelled containers.",
+      "band_note": "Use for the final process step, not general conclusions.",
+      "related_slugs": ["subsequently", "after-being-processed"]
+    }
+  ],
+  "samples": [
+    {
+      "seed_key": "t1-line-graph-band-7",
+      "task_type": 1,
+      "subtype": "line_graph",
+      "title": "Bicycle Commuters in Two Cities",
+      "band_score": 7,
+      "prompt_text": "The line graph compares the percentage of commuters travelling by bicycle in City A and City B between 2014 and 2024. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "prompt_image_url": "/assets/charts/line_graph.svg",
+      "body_markup": "The line graph shows changes in the proportion of commuters who used bicycles in two cities from 2014 to 2024.\n\n[[overall|Overall]], both cities experienced [[upward-trend|an upward trend]], although cycling was consistently more common in City A. The increase in City B was slower at first, but [[the-gap-widened|the gap widened]] after 2020.\n\nIn City A, the figure started at 18 percent in 2014 and [[rose-steadily|rose steadily]] to 27 percent by 2020. It then [[increased-sharply|increased sharply]], reaching 42 percent in 2024. [[by-contrast|By contrast]], City B began at only 10 percent and moved up gradually to 16 percent in 2020.\n\nIn the final four years, the figure for City B climbed to 24 percent. This was still far lower than City A's final result, but it represented a clear improvement.",
+      "structure_breakdown": [
+        {"label": "Introduction", "note": "Paraphrases the graph without copying the task wording."},
+        {"label": "Overview", "note": "Identifies the shared upward trend and the persistent lead for City A."},
+        {"label": "Details 1", "note": "Describes City A first, using start, middle, and end values."},
+        {"label": "Details 2", "note": "Compares City B against City A and avoids listing every year."}
+      ],
+      "tags": ["trend", "commuting", "comparison"]
+    },
+    {
+      "seed_key": "t1-line-graph-band-9",
+      "task_type": 1,
+      "subtype": "line_graph",
+      "title": "Bicycle Commuters in Two Cities",
+      "band_score": 9,
+      "prompt_text": "The line graph compares the percentage of commuters travelling by bicycle in City A and City B between 2014 and 2024. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "prompt_image_url": "/assets/charts/line_graph.svg",
+      "body_markup": "The line graph illustrates the share of commuters travelling by bicycle in City A and City B over a ten-year period.\n\n[[overall|Overall]], cycling became more popular in both places, but City A remained ahead throughout. Another notable feature is that City A's growth accelerated after 2020, so [[the-gap-widened|the gap widened]] noticeably by the end of the period.\n\nCity A began at 18 percent in 2014 and then [[rose-steadily|rose steadily]] to 27 percent in 2020. From that point, the increase became much faster, and the proportion [[reached-a-peak|reached a peak]] of 42 percent in 2024. [[whereas|Whereas]] City A added 24 percentage points overall, City B gained 14.\n\nCity B followed [[a-similar-pattern|a similar pattern]], moving from 10 percent to 16 percent in the first six years before finishing at 24 percent. [[compared-with|Compared with]] City A, however, its final figure was still much lower.",
+      "structure_breakdown": [
+        {"label": "Introduction", "note": "Uses precise paraphrase: share, commuters, over a ten-year period."},
+        {"label": "Overview", "note": "Selects two main features instead of listing numbers."},
+        {"label": "Details", "note": "Groups data by city and compares total growth."},
+        {"label": "Phrase use", "note": "Highlights comparisons and trend language without overloading the answer."}
+      ],
+      "tags": ["trend", "commuting", "comparison", "high-band"]
+    },
+    {
+      "seed_key": "t1-bar-chart-band-7",
+      "task_type": 1,
+      "subtype": "bar_chart",
+      "title": "Preferred Weekend Activities",
+      "band_score": 7,
+      "prompt_text": "The bar chart shows the percentage of adults in four age groups who chose different weekend activities in 2024.",
+      "prompt_image_url": "/assets/charts/bar_chart.svg",
+      "body_markup": "The bar chart compares adults in four age groups according to their preferred weekend activities in 2024.\n\n[[overall|Overall]], streaming was the most popular option among younger adults, [[whereas|whereas]] gardening attracted a much older audience. Sport was relatively popular among the two younger groups but became less common with age.\n\nAmong 18- to 29-year-olds, streaming accounted for 45 percent, [[far-higher-than|far higher than]] gardening at 8 percent. Sport was also chosen by 30 percent of this group. [[by-contrast|By contrast]], people aged 60 and over preferred gardening, at 42 percent, compared with only 15 percent for streaming.\n\nThe middle age groups showed a more balanced pattern. In the 30-44 group, streaming and sport recorded 34 and 26 percent, [[respectively|respectively]], while the 45-59 group was led by gardening at 31 percent.",
+      "structure_breakdown": [
+        {"label": "Introduction", "note": "Identifies groups and activity categories."},
+        {"label": "Overview", "note": "Contrasts younger and older preferences."},
+        {"label": "Details 1", "note": "Gives strongest contrast: youngest vs oldest."},
+        {"label": "Details 2", "note": "Summarises middle groups without over-detailing."}
+      ],
+      "tags": ["bar chart", "age groups", "comparison"]
+    },
+    {
+      "seed_key": "t1-bar-chart-band-9",
+      "task_type": 1,
+      "subtype": "bar_chart",
+      "title": "Preferred Weekend Activities",
+      "band_score": 9,
+      "prompt_text": "The bar chart shows the percentage of adults in four age groups who chose different weekend activities in 2024.",
+      "prompt_image_url": "/assets/charts/bar_chart.svg",
+      "body_markup": "The bar chart breaks down adults' preferred weekend activities by age group in 2024.\n\n[[overall|Overall]], preferences varied strongly with age: younger adults were most likely to choose streaming or sport, while gardening dominated among older respondents. Reading was the most stable category across the chart.\n\nFor 18-29-year-olds, streaming was selected by 45 percent, making it the leading activity in that group. The equivalent figure fell to 34 percent among those aged 30-44 and then to 21 percent for 45-59-year-olds. [[in-contrast|In contrast]], gardening moved in the opposite direction, rising from just 8 percent in the youngest group to 42 percent in the oldest.\n\nSport also showed [[downward-trend|a downward trend]] with age, dropping from 30 percent to 12 percent. Reading, however, [[remained-stable|remained stable]], with figures clustered between 18 and 24 percent.",
+      "structure_breakdown": [
+        {"label": "Overview", "note": "Adds a third insight: reading is stable."},
+        {"label": "Comparison", "note": "Contrasts categories that move in opposite directions."},
+        {"label": "Precision", "note": "Uses percentages selectively rather than describing every bar."}
+      ],
+      "tags": ["bar chart", "age groups", "high-band"]
+    },
+    {
+      "seed_key": "t1-pie-chart-band-7",
+      "task_type": 1,
+      "subtype": "pie_chart",
+      "title": "Household Energy Use",
+      "band_score": 7,
+      "prompt_text": "The pie charts compare household energy use in one country in 2010 and 2024.",
+      "prompt_image_url": "/assets/charts/pie_chart.svg",
+      "body_markup": "The two pie charts compare how household energy was used in one country in 2010 and 2024.\n\n[[overall|Overall]], heating remained the largest category in both years, but its share fell. [[by-contrast|By contrast]], the proportion used for electronics and cooling increased.\n\nIn 2010, heating made up 46 percent of household energy use, which was [[roughly-twice-as-high-as|roughly twice as high as]] water heating at 24 percent. Cooking and electronics accounted for 13 and 10 percent, [[respectively|respectively]], while cooling was the smallest category, at 7 percent.\n\nBy 2024, heating had [[declined-gradually|declined]] to 38 percent, although it was still the biggest share. Electronics rose to 17 percent, and cooling also increased to 12 percent. Water heating and cooking changed only slightly.",
+      "structure_breakdown": [
+        {"label": "Introduction", "note": "States years and subject clearly."},
+        {"label": "Overview", "note": "Identifies largest category and main shifts."},
+        {"label": "2010 details", "note": "Groups the original shares from largest to smallest."},
+        {"label": "2024 details", "note": "Focuses on changed categories."}
+      ],
+      "tags": ["pie chart", "energy", "proportions"]
+    },
+    {
+      "seed_key": "t1-pie-chart-band-9",
+      "task_type": 1,
+      "subtype": "pie_chart",
+      "title": "Household Energy Use",
+      "band_score": 9,
+      "prompt_text": "The pie charts compare household energy use in one country in 2010 and 2024.",
+      "prompt_image_url": "/assets/charts/pie_chart.svg",
+      "body_markup": "The pie charts show the distribution of household energy consumption in one country in 2010 and 2024.\n\n[[overall|Overall]], heating continued to take the largest share, although it became less dominant. Meanwhile, electronics and cooling together represented a noticeably larger proportion by 2024.\n\nHeating accounted for 46 percent in 2010, [[compared-with|compared with]] 38 percent in 2024. Water heating was the second-largest use in both years and [[remained-stable|remained broadly stable]], moving only from 24 to 23 percent. Cooking also changed little, falling by one percentage point to 12 percent.\n\nThe clearest growth was in newer household demands. Electronics increased from 10 to 17 percent, while cooling rose from 7 to 12 percent. [[taken-together|Taken together]], these two categories expanded from less than a fifth to almost a third of total energy use.",
+      "structure_breakdown": [
+        {"label": "Overview", "note": "Summarises dominance and growth patterns."},
+        {"label": "Stable categories", "note": "Groups heating, water heating, and cooking by their relationship."},
+        {"label": "Growth categories", "note": "Combines electronics and cooling for a stronger comparison."}
+      ],
+      "tags": ["pie chart", "energy", "high-band"]
+    },
+    {
+      "seed_key": "t1-table-band-7",
+      "task_type": 1,
+      "subtype": "table",
+      "title": "Library Visits and Borrowing",
+      "band_score": 7,
+      "prompt_text": "The table gives information about library visits, borrowed books, and computer use in three towns in 2024.",
+      "prompt_image_url": "/assets/charts/table.svg",
+      "body_markup": "The table compares three towns in terms of library visits, borrowed books and computer use in 2024.\n\n[[overall|Overall]], Northport recorded the highest number of visits and borrowed books, while Eastford had the greatest computer use. Southvale had the lowest figures in most categories.\n\nNorthport received 82,000 visits and lent 118,000 books. [[the-figure-for|The figure for]] borrowed books was [[far-higher-than|far higher than]] in Eastford, where 76,000 books were borrowed. However, Eastford led in computer sessions, with 41,000, [[compared-with|compared with]] 35,000 in Northport.\n\nSouthvale had 49,000 visits and 52,000 loans, making it the smallest of the three library systems. Its computer use, at 24,000 sessions, was also the lowest.",
+      "structure_breakdown": [
+        {"label": "Introduction", "note": "Lists measures without copying the prompt exactly."},
+        {"label": "Overview", "note": "Compares strongest and weakest towns."},
+        {"label": "Details", "note": "Groups Northport and Eastford before covering Southvale."}
+      ],
+      "tags": ["table", "library", "public services"]
+    },
+    {
+      "seed_key": "t1-table-band-9",
+      "task_type": 1,
+      "subtype": "table",
+      "title": "Library Visits and Borrowing",
+      "band_score": 9,
+      "prompt_text": "The table gives information about library visits, borrowed books, and computer use in three towns in 2024.",
+      "prompt_image_url": "/assets/charts/table.svg",
+      "body_markup": "The table presents three measures of library activity in Northport, Eastford and Southvale in 2024.\n\n[[overall|Overall]], Northport was the busiest library system for visits and loans, whereas Eastford made the greatest use of computers. Southvale was behind the other two towns on every measure shown.\n\nNorthport had 82,000 visits and 118,000 book loans, the highest figures in both categories. Eastford attracted fewer visits, at 65,000, but it still recorded 76,000 loans. [[in-terms-of|In terms of]] computer sessions, Eastford ranked first with 41,000, exceeding Northport by 6,000.\n\nSouthvale's figures were much lower: 49,000 visits, 52,000 loans and 24,000 computer sessions. [[this-suggests-that|This suggests that]] its library service was used less intensively across both traditional and digital activities.",
+      "structure_breakdown": [
+        {"label": "Overview", "note": "Ranks towns by major patterns."},
+        {"label": "Selective detail", "note": "Uses exact numbers only where they support ranking and comparison."},
+        {"label": "Caution", "note": "Makes a restrained interpretation rather than overclaiming."}
+      ],
+      "tags": ["table", "library", "high-band"]
+    },
+    {
+      "seed_key": "t1-process-band-7",
+      "task_type": 1,
+      "subtype": "process_diagram",
+      "title": "Recycling Glass Bottles",
+      "band_score": 7,
+      "prompt_text": "The diagram shows the process of recycling glass bottles.",
+      "prompt_image_url": "/assets/charts/process_diagram.svg",
+      "body_markup": "The diagram illustrates how glass bottles are recycled and turned into new products.\n\n[[overall|Overall]], the process has seven main stages, beginning with collection and ending with new bottles being delivered to shops. It is a circular process because used bottles can re-enter the system.\n\n[[the-first-stage|The first stage]] is to collect bottles from recycling bins. They are then transported to a plant, where they are sorted by colour and washed. [[subsequently|Subsequently]], the clean glass is crushed into small pieces and melted in a furnace.\n\n[[after-being-processed|After being processed]], the liquid glass is shaped into new bottles. [[finally|Finally]], these bottles are filled, labelled and sent to supermarkets for sale.",
+      "structure_breakdown": [
+        {"label": "Introduction", "note": "Names the process and final product."},
+        {"label": "Overview", "note": "States number of stages and circular nature."},
+        {"label": "Sequence", "note": "Uses passive voice and sequencing language."}
+      ],
+      "tags": ["process", "recycling", "passive voice"]
+    },
+    {
+      "seed_key": "t1-process-band-9",
+      "task_type": 1,
+      "subtype": "process_diagram",
+      "title": "Recycling Glass Bottles",
+      "band_score": 9,
+      "prompt_text": "The diagram shows the process of recycling glass bottles.",
+      "prompt_image_url": "/assets/charts/process_diagram.svg",
+      "body_markup": "The diagram explains the recycling cycle through which used glass bottles are converted into new containers for sale.\n\n[[overall|Overall]], this is a seven-stage, cyclical process. It starts when consumers place empty bottles in recycling bins and finishes when newly filled bottles return to shops, ready to be bought again.\n\n[[the-first-stage|The first stage]] involves collecting used bottles and transporting them to a recycling facility. Once there, the bottles are separated according to colour and thoroughly cleaned. [[subsequently|Subsequently]], they are broken into fragments before being heated until the glass melts.\n\nThe molten material is then moulded into new bottles. [[after-being-processed|After being processed]] in this way, the bottles are filled with products, labelled and distributed to retailers. [[finally|Finally]], consumers purchase them, allowing the cycle to continue.",
+      "structure_breakdown": [
+        {"label": "Overview", "note": "Captures both the number of stages and the cycle."},
+        {"label": "Grammar", "note": "Uses passive forms naturally because the actor is unimportant."},
+        {"label": "Coherence", "note": "The sequence is grouped into collection, treatment, and redistribution."}
+      ],
+      "tags": ["process", "recycling", "high-band"]
+    },
+    {
+      "seed_key": "t1-maps-band-7",
+      "task_type": 1,
+      "subtype": "maps",
+      "title": "Town Centre Redevelopment",
+      "band_score": 7,
+      "prompt_text": "The maps show a town centre in 2010 and after redevelopment in 2024.",
+      "prompt_image_url": "/assets/charts/maps.svg",
+      "body_markup": "The maps compare the layout of a town centre in 2010 with its appearance after redevelopment in 2024.\n\n[[overall|Overall]], the area became more pedestrian-friendly, with more public space and fewer car facilities. The main road stayed in the same position, but several buildings changed use.\n\nIn 2010, a car park [[is-located|was located]] west of the market hall, while a bus stop stood near the main road. By 2024, the car park [[was-replaced-by|was replaced by]] a public square, and the bus stop had become a larger transport hub.\n\nThe old cinema in the north [[was-replaced-by|was replaced by]] apartments. [[by-contrast|By contrast]], the library remained in the same place, although a cafe was added beside it.",
+      "structure_breakdown": [
+        {"label": "Introduction", "note": "States time comparison and location."},
+        {"label": "Overview", "note": "Identifies the biggest redevelopment theme."},
+        {"label": "Details", "note": "Uses location and change language."}
+      ],
+      "tags": ["maps", "redevelopment", "location"]
+    },
+    {
+      "seed_key": "t1-maps-band-9",
+      "task_type": 1,
+      "subtype": "maps",
+      "title": "Town Centre Redevelopment",
+      "band_score": 9,
+      "prompt_text": "The maps show a town centre in 2010 and after redevelopment in 2024.",
+      "prompt_image_url": "/assets/charts/maps.svg",
+      "body_markup": "The two maps illustrate how a town centre changed between 2010 and 2024 following redevelopment.\n\n[[overall|Overall]], the centre was transformed from a car-oriented space into a more mixed-use and pedestrian-focused area. The road layout was largely unchanged, but the functions of several sites were altered.\n\nIn 2010, the car park [[is-located|was located]] to the west of the market hall. By 2024, it [[was-replaced-by|had been replaced by]] a public square with seating. The small bus stop on the eastern side also expanded into a transport hub, improving access to the centre.\n\nTo the north, the cinema disappeared and apartments were constructed in its place. [[however|However]], the library was retained, and a new cafe was added next to it, creating a cluster of leisure and public facilities.",
+      "structure_breakdown": [
+        {"label": "Overview", "note": "Summarises the type of change, not just individual buildings."},
+        {"label": "Map language", "note": "Uses west, eastern side, to the north, next to it."},
+        {"label": "Tense control", "note": "Uses past and present perfect forms for completed redevelopment."}
+      ],
+      "tags": ["maps", "redevelopment", "high-band"]
+    },
+    {
+      "seed_key": "t1-mixed-band-7",
+      "task_type": 1,
+      "subtype": "mixed_charts",
+      "title": "Transport Mode and Emissions",
+      "band_score": 7,
+      "prompt_text": "The charts show how people travelled to work in one city in 2024 and the average emissions produced by each mode of transport.",
+      "prompt_image_url": "/assets/charts/mixed_charts.svg",
+      "body_markup": "The charts compare commuting methods in one city in 2024 and show the average emissions produced by each mode.\n\n[[overall|Overall]], cars were the most common way to travel to work and also produced the highest emissions per commuter. Walking and cycling were used by fewer people but created no direct emissions.\n\nCars accounted for 48 percent of commutes, [[far-higher-than|far higher than]] buses at 22 percent. Trains and cycling represented 15 and 9 percent, [[respectively|respectively]], while walking was the least common at 6 percent.\n\n[[in-terms-of|In terms of]] emissions, cars produced 180 grams per kilometre per commuter. Buses and trains were lower, at 70 and 45 grams. [[by-contrast|By contrast]], walking and cycling produced no direct emissions.",
+      "structure_breakdown": [
+        {"label": "Introduction", "note": "Handles both charts in one sentence."},
+        {"label": "Overview", "note": "Connects popularity with environmental impact."},
+        {"label": "Details", "note": "Describes mode share first, then emissions."}
+      ],
+      "tags": ["mixed charts", "transport", "emissions"]
+    },
+    {
+      "seed_key": "t1-mixed-band-9",
+      "task_type": 1,
+      "subtype": "mixed_charts",
+      "title": "Transport Mode and Emissions",
+      "band_score": 9,
+      "prompt_text": "The charts show how people travelled to work in one city in 2024 and the average emissions produced by each mode of transport.",
+      "prompt_image_url": "/assets/charts/mixed_charts.svg",
+      "body_markup": "The charts compare the distribution of commuting modes in one city in 2024 with the average emissions generated by each mode.\n\n[[overall|Overall]], car travel dominated commuting and was also the most polluting option. Conversely, the lowest-emission modes, walking and cycling, accounted for only a small minority of journeys.\n\nAlmost half of commuters travelled by car, at 48 percent. This was [[roughly-twice-as-high-as|roughly twice as high as]] the bus share, which stood at 22 percent. Train travel made up 15 percent, while cycling and walking were less common, at 9 and 6 percent.\n\nThe emissions data show a clear contrast. Cars produced 180 grams per kilometre per commuter, [[compared-with|compared with]] 70 for buses and 45 for trains. Walking and cycling generated no direct emissions, so [[taken-together|taken together]] they were environmentally preferable despite their limited uptake.",
+      "structure_breakdown": [
+        {"label": "Overview", "note": "Synthesises both visuals: commonness vs emissions."},
+        {"label": "Comparison", "note": "Uses proportional comparison for car and bus shares."},
+        {"label": "Final detail", "note": "Draws a measured conclusion from the two chart types."}
+      ],
+      "tags": ["mixed charts", "transport", "high-band"]
+    },
+    {
+      "seed_key": "t2-opinion-band-6",
+      "task_type": 2,
+      "subtype": "opinion_agree_disagree",
+      "title": "Online Learning and Universities",
+      "band_score": 6,
+      "prompt_text": "Some people believe that online learning will eventually replace traditional university classes. To what extent do you agree or disagree?",
+      "prompt_image_url": null,
+      "body_markup": "Online learning has become common, and some people think it will replace university classes. [[i-partially-agree|I partially agree]] because it is useful, but it cannot do everything that a university does.\n\nOnline courses are convenient. Students can watch lectures at home and study at their own speed. [[for-instance|For instance]], a person with a job can learn in the evening without travelling to campus. This [[may-lead-to|may lead to]] more people getting education.\n\n[[however|However]], traditional classes still have advantages. Students can ask questions immediately and work with classmates. Some subjects, such as medicine and engineering, need laboratories and practical training. Online learning cannot fully replace this.\n\n[[in-conclusion|In conclusion]], online education will become more important, but it is unlikely to replace universities completely.",
+      "structure_breakdown": [
+        {"label": "Position", "note": "Clear partial agreement but thesis could be more precise."},
+        {"label": "Body 1", "note": "Explains convenience with a simple example."},
+        {"label": "Body 2", "note": "Gives a limitation, but development is fairly general."}
+      ],
+      "tags": ["opinion", "education", "band 6"]
+    },
+    {
+      "seed_key": "t2-opinion-band-8",
+      "task_type": 2,
+      "subtype": "opinion_agree_disagree",
+      "title": "Online Learning and Universities",
+      "band_score": 8,
+      "prompt_text": "Some people believe that online learning will eventually replace traditional university classes. To what extent do you agree or disagree?",
+      "prompt_image_url": null,
+      "body_markup": "A growing number of students now study through digital platforms, which has led some to predict the end of traditional university classes. [[from-my-perspective|From my perspective]], online learning will expand significantly, but it will complement rather than replace campus-based education.\n\nThe main strength of online learning is access. Students who live far from major cities, work full time or have family responsibilities can study without relocating. [[moreover|Moreover]], recorded lectures allow learners to review difficult material repeatedly. [[as-a-result|As a result]], universities can reach groups who were previously excluded from higher education.\n\n[[nevertheless|Nevertheless]], universities offer more than information delivery. Seminars, laboratories and supervised projects develop collaboration, discipline and practical competence. [[in-many-cases|In many cases]], these skills depend on immediate feedback and shared physical resources, especially in clinical or technical subjects.\n\n[[on-balance|On balance]], online learning is likely to become a permanent part of higher education, but the strongest model will be blended rather than fully virtual.",
+      "structure_breakdown": [
+        {"label": "Thesis", "note": "Gives a nuanced position: complement rather than replace."},
+        {"label": "Body 1", "note": "Develops access and review benefits."},
+        {"label": "Body 2", "note": "Explains why full replacement is unrealistic."},
+        {"label": "Conclusion", "note": "Returns to the exact question with a clear judgement."}
+      ],
+      "tags": ["opinion", "education", "high-band"]
+    },
+    {
+      "seed_key": "t2-discussion-band-6",
+      "task_type": 2,
+      "subtype": "discussion_both_views",
+      "title": "Public Money for Arts or Healthcare",
+      "band_score": 6,
+      "prompt_text": "Some people think governments should spend more money on the arts, while others believe healthcare should be the priority. Discuss both views and give your own opinion.",
+      "prompt_image_url": null,
+      "body_markup": "People have different views about government spending. Some support the arts, but others think healthcare is more important. [[i-firmly-believe|I believe]] healthcare should come first, although the arts also need some support.\n\nThe arts are important because they make society more interesting. Museums, music and theatre can teach people about culture. They can also attract tourists, so they help the economy. [[therefore|Therefore]], governments should not ignore them.\n\n[[however|However]], healthcare is a basic need. If hospitals are poor, people suffer and may not be able to work. [[for-instance|For instance]], long waiting lists can make small illnesses worse. This costs more money later.\n\n[[in-conclusion|In conclusion]], both areas are useful, but healthcare should receive more funding because it directly affects people's lives.",
+      "structure_breakdown": [
+        {"label": "View 1", "note": "Explains cultural and economic value of arts."},
+        {"label": "View 2", "note": "Explains healthcare as a basic need."},
+        {"label": "Opinion", "note": "Clear but could be integrated more smoothly."}
+      ],
+      "tags": ["discussion", "government spending", "band 6"]
+    },
+    {
+      "seed_key": "t2-discussion-band-8",
+      "task_type": 2,
+      "subtype": "discussion_both_views",
+      "title": "Public Money for Arts or Healthcare",
+      "band_score": 8,
+      "prompt_text": "Some people think governments should spend more money on the arts, while others believe healthcare should be the priority. Discuss both views and give your own opinion.",
+      "prompt_image_url": null,
+      "body_markup": "Debate continues over whether public money should be directed towards cultural projects or essential services such as healthcare. [[it-is-reasonable-to-argue|It is reasonable to argue]] that the arts deserve support, but I believe healthcare should receive priority when budgets are limited.\n\nSupporters of arts funding point out that culture strengthens a society's identity. Public galleries, theatres and festivals make creative work accessible to people who could not otherwise afford it. [[in-addition|In addition]], cultural events can attract visitors and support local businesses.\n\n[[by-contrast|By contrast]], healthcare spending protects citizens' basic welfare. A well-funded health system reduces preventable deaths, shortens waiting times and helps people return to work. [[in-other-words|In other words]], it supports both human dignity and economic productivity.\n\n[[in-conclusion|In conclusion]], the arts bring social and financial benefits, but healthcare should come first because its absence causes immediate and serious harm.",
+      "structure_breakdown": [
+        {"label": "Introduction", "note": "Mentions both views and gives opinion."},
+        {"label": "Balanced discussion", "note": "Each view gets a developed paragraph."},
+        {"label": "Evaluation", "note": "Final judgement explains why one side is stronger."}
+      ],
+      "tags": ["discussion", "government spending", "high-band"]
+    },
+    {
+      "seed_key": "t2-problem-solution-band-6",
+      "task_type": 2,
+      "subtype": "problem_solution",
+      "title": "Traffic Congestion in Cities",
+      "band_score": 6,
+      "prompt_text": "Many cities are experiencing serious traffic congestion. What are the causes of this problem, and what solutions can you suggest?",
+      "prompt_image_url": null,
+      "body_markup": "Traffic congestion is a major problem in many cities. The causes include too many private cars and weak public transport. There are several solutions.\n\nOne reason is that many people prefer to drive because it is comfortable. Public transport is sometimes slow, crowded and unreliable. [[as-a-result|As a result]], roads become full during rush hour. Another cause is that many offices are in city centres, so everyone travels to the same area.\n\nGovernments can [[tackle-the-issue|tackle the issue]] by improving buses and trains. If public transport is cheaper and faster, more people will use it. Cities can also create bike lanes and charge drivers for entering busy areas.\n\n[[in-conclusion|In conclusion]], congestion is caused by car dependence and poor transport planning. Better public transport and driving restrictions are practical solutions.",
+      "structure_breakdown": [
+        {"label": "Causes", "note": "Identifies car preference and city-centre commuting."},
+        {"label": "Solutions", "note": "Suggests public transport, cycling, and charges."},
+        {"label": "Weakness", "note": "Ideas are relevant but could include more explanation."}
+      ],
+      "tags": ["problem solution", "transport", "band 6"]
+    },
+    {
+      "seed_key": "t2-problem-solution-band-8",
+      "task_type": 2,
+      "subtype": "problem_solution",
+      "title": "Traffic Congestion in Cities",
+      "band_score": 8,
+      "prompt_text": "Many cities are experiencing serious traffic congestion. What are the causes of this problem, and what solutions can you suggest?",
+      "prompt_image_url": null,
+      "body_markup": "Traffic congestion has become a persistent problem in many urban areas. The main causes are dependence on private cars and the concentration of jobs in central districts, but these can be addressed through integrated transport policies.\n\nCar dependence is often created by weak alternatives. If buses are unreliable and train routes are limited, commuters understandably choose to drive. [[consequently|Consequently]], roads become overloaded at peak times. [[moreover|Moreover]], when offices, schools and shopping areas are clustered in the centre, large numbers of people travel in the same direction each morning.\n\nThe most effective response is to make public transport genuinely competitive. Cities should invest in frequent buses, safe stations and connected routes. [[in-addition|In addition]], [[practical-measures|practical measures]] such as protected cycle lanes, park-and-ride sites and congestion charges can reduce unnecessary car trips.\n\n[[overall|Overall]], congestion cannot be solved by one policy alone. It requires a transport system that makes cleaner and more space-efficient choices easier than driving.",
+      "structure_breakdown": [
+        {"label": "Problem analysis", "note": "Links causes to commuter behaviour."},
+        {"label": "Solutions", "note": "Offers a package of measures rather than one simple fix."},
+        {"label": "Conclusion", "note": "Synthesises the solution logic."}
+      ],
+      "tags": ["problem solution", "transport", "high-band"]
+    },
+    {
+      "seed_key": "t2-advantage-band-6",
+      "task_type": 2,
+      "subtype": "advantage_disadvantage",
+      "title": "Working From Home",
+      "band_score": 6,
+      "prompt_text": "More employees are working from home. Do the advantages of this trend outweigh the disadvantages?",
+      "prompt_image_url": null,
+      "body_markup": "Working from home is more common now. It has both advantages and disadvantages, but I think the advantages are greater.\n\nThe main advantage is flexibility. Employees can save time because they do not need to travel. This can improve family life and reduce stress. Companies may also save money because they need less office space.\n\n[[however|However]], there are disadvantages. Some workers feel lonely at home. It can also be difficult to communicate with colleagues. [[in-many-cases|In many cases]], people work longer hours because their home and work life are mixed.\n\n[[on-balance|On balance]], I think the advantages [[outweigh-the-drawbacks|outweigh the drawbacks]] if companies manage remote work carefully.",
+      "structure_breakdown": [
+        {"label": "Advantage", "note": "Explains flexibility and reduced commuting."},
+        {"label": "Disadvantage", "note": "Mentions isolation and blurred boundaries."},
+        {"label": "Judgement", "note": "Clear but brief evaluation."}
+      ],
+      "tags": ["advantages disadvantages", "work", "band 6"]
+    },
+    {
+      "seed_key": "t2-advantage-band-8",
+      "task_type": 2,
+      "subtype": "advantage_disadvantage",
+      "title": "Working From Home",
+      "band_score": 8,
+      "prompt_text": "More employees are working from home. Do the advantages of this trend outweigh the disadvantages?",
+      "prompt_image_url": null,
+      "body_markup": "Remote work has moved from a temporary arrangement to a normal part of many industries. Although it can weaken workplace relationships, I believe its advantages generally [[outweigh-the-drawbacks|outweigh the drawbacks]] when employers set clear expectations.\n\nThe strongest benefit is the removal of daily commuting. Employees save time and money, while cities experience less pressure on roads and public transport. [[moreover|Moreover]], flexible work can help parents, disabled workers and people outside major cities access jobs that would otherwise be impractical.\n\nThe main disadvantage is reduced informal contact. Junior employees may learn less from colleagues, and teams can become fragmented if communication is poorly managed. [[however|However]], this problem is not unavoidable. Regular meetings, mentoring systems and occasional office days can preserve collaboration.\n\n[[on-balance|On balance]], remote work offers substantial personal and environmental benefits, and its disadvantages can be controlled through good management rather than rejecting the model entirely.",
+      "structure_breakdown": [
+        {"label": "Position", "note": "Answers outweigh directly in the introduction."},
+        {"label": "Development", "note": "Benefits are extended beyond personal convenience."},
+        {"label": "Evaluation", "note": "Acknowledges disadvantages and explains why they are manageable."}
+      ],
+      "tags": ["advantages disadvantages", "work", "high-band"]
+    },
+    {
+      "seed_key": "t2-two-part-band-6",
+      "task_type": 2,
+      "subtype": "two_part_question",
+      "title": "Children and Financial Education",
+      "band_score": 6,
+      "prompt_text": "Many young people leave school without knowing how to manage money. Why does this happen, and how can schools help?",
+      "prompt_image_url": null,
+      "body_markup": "Many young people do not know how to manage money when they leave school. This happens because schools focus on academic subjects, and parents may not teach finance at home.\n\nOne reason is that exams are the main priority. Teachers spend most lessons on subjects such as maths, science and languages. [[as-a-result|As a result]], practical life skills receive less attention. Also, some parents are not confident with money themselves.\n\nSchools can help by teaching basic financial skills. Students should learn how to budget, save and understand interest. [[for-instance|For instance]], they could compare phone contracts or plan a weekly food budget.\n\n[[in-conclusion|In conclusion]], young people lack financial knowledge because it is not taught enough. Schools can solve this by adding practical money lessons.",
+      "structure_breakdown": [
+        {"label": "Question 1", "note": "Explains school priorities and home background."},
+        {"label": "Question 2", "note": "Suggests practical lessons."},
+        {"label": "Coverage", "note": "Both questions are answered, but examples could be deeper."}
+      ],
+      "tags": ["two part", "education", "money", "band 6"]
+    },
+    {
+      "seed_key": "t2-two-part-band-8",
+      "task_type": 2,
+      "subtype": "two_part_question",
+      "title": "Children and Financial Education",
+      "band_score": 8,
+      "prompt_text": "Many young people leave school without knowing how to manage money. Why does this happen, and how can schools help?",
+      "prompt_image_url": null,
+      "body_markup": "A surprising number of students finish school with little understanding of budgeting, saving or debt. This is largely because financial education is treated as optional, but schools could address the problem through practical, assessed life-skills modules.\n\nThe first reason is curriculum pressure. Schools are often judged by exam results in traditional subjects, so teachers have limited time for topics that are not formally tested. [[in-addition|In addition]], parents may assume that money management is common sense, even though [[younger-generations|younger generations]] face complex products such as subscriptions, loans and digital payments.\n\nSchools can respond by making financial literacy explicit and practical. Lessons should include budgeting, compound interest, taxes and responsible borrowing. [[for-instance|For instance]], students could plan a monthly budget for a first job and calculate how interest changes the final cost of a loan.\n\n[[therefore|Therefore]], the problem is not a lack of student ability but a lack of structured teaching. If schools make money management practical and compulsory, young people will leave with skills they can use immediately.",
+      "structure_breakdown": [
+        {"label": "Answer 1", "note": "Explains why the gap exists in curriculum and family assumptions."},
+        {"label": "Answer 2", "note": "Gives specific classroom content and activity."},
+        {"label": "Conclusion", "note": "Synthesises both answers rather than repeating them mechanically."}
+      ],
+      "tags": ["two part", "education", "money", "high-band"]
+    }
+  ],
+  "tips": [
+    {
+      "seed_key": "tip-band-descriptors-overview",
+      "category": "band_descriptors",
+      "title": "What the Four Writing Scores Mean",
+      "body": "IELTS Writing is marked in four areas: Task Achievement or Task Response, Coherence and Cohesion, Lexical Resource, and Grammar Range and Accuracy. Strong answers answer the exact question, organise ideas clearly, use precise vocabulary, and keep grammar errors under control.",
+      "descriptor": "All descriptors",
+      "tags": ["scoring", "overview"]
+    },
+    {
+      "seed_key": "tip-task1-overview",
+      "category": "task_1_structure",
+      "title": "Task 1 Needs a Real Overview",
+      "body": "Your overview should report the biggest patterns, not specific minor numbers. For charts, look for highest and lowest categories, major increases or decreases, stable figures, and obvious contrasts. For processes, mention the number of stages and where the process starts and ends.",
+      "descriptor": "Task Achievement",
+      "tags": ["task 1", "overview"]
+    },
+    {
+      "seed_key": "tip-task1-paragraphing",
+      "category": "task_1_structure",
+      "title": "A Reliable Task 1 Layout",
+      "body": "Use four paragraphs: introduction, overview, detail paragraph 1, detail paragraph 2. Group related data instead of describing every number from left to right.",
+      "descriptor": "Coherence and Cohesion",
+      "tags": ["task 1", "paragraphing"]
+    },
+    {
+      "seed_key": "tip-task2-thesis",
+      "category": "task_2_structure",
+      "title": "Make the Thesis Answer the Question",
+      "body": "For opinion and outweigh questions, state your position in the introduction. A vague line such as this essay will discuss both sides is usually weaker than a direct answer.",
+      "descriptor": "Task Response",
+      "tags": ["task 2", "thesis"]
+    },
+    {
+      "seed_key": "tip-task2-body-logic",
+      "category": "task_2_structure",
+      "title": "Body Paragraph Logic",
+      "body": "A strong body paragraph usually has one main idea, an explanation, and a concrete example or consequence. Do not add three unrelated ideas into one paragraph just to look comprehensive.",
+      "descriptor": "Coherence and Cohesion",
+      "tags": ["task 2", "body paragraphs"]
+    },
+    {
+      "seed_key": "tip-common-ta-mistakes",
+      "category": "common_mistakes",
+      "title": "Task Achievement Mistakes",
+      "body": "Common Task 1 problems include missing the overview, describing every number, or making unsupported interpretations. Common Task 2 problems include answering only part of the question, changing your position, or giving memorised ideas that do not fit the prompt.",
+      "descriptor": "Task Achievement / Task Response",
+      "tags": ["mistakes", "task response"]
+    },
+    {
+      "seed_key": "tip-common-cohesion-mistakes",
+      "category": "common_mistakes",
+      "title": "Cohesion Is Not Just Linkers",
+      "body": "Using many linkers does not guarantee a high score. Your ideas must move logically from sentence to sentence. Repetition, unclear references, and paragraphs without a central idea can reduce coherence even if the essay uses however and moreover.",
+      "descriptor": "Coherence and Cohesion",
+      "tags": ["mistakes", "cohesion"]
+    },
+    {
+      "seed_key": "tip-lexical-resource",
+      "category": "common_mistakes",
+      "title": "Lexical Resource Is Precision",
+      "body": "High lexical scores come from accurate word choice, not rare words. A simple phrase used exactly is better than an advanced phrase used unnaturally. Avoid memorised idioms in formal Task 2 essays.",
+      "descriptor": "Lexical Resource",
+      "tags": ["vocabulary", "mistakes"]
+    },
+    {
+      "seed_key": "tip-grammar-control",
+      "category": "common_mistakes",
+      "title": "Grammar Range Needs Control",
+      "body": "Long sentences are useful only when they are accurate. Mix simple, compound, and complex sentences. Check subject-verb agreement, articles, plural nouns, and punctuation before trying to add more advanced structures.",
+      "descriptor": "Grammar Range and Accuracy",
+      "tags": ["grammar", "mistakes"]
+    },
+    {
+      "seed_key": "tip-time-management",
+      "category": "time_management",
+      "title": "60-Minute Writing Timing",
+      "body": "Spend about 20 minutes on Task 1 and 40 minutes on Task 2. For Task 2, use 5 minutes to plan, 30 minutes to write, and 5 minutes to check. If you run out of time, finish the conclusion in one direct sentence.",
+      "descriptor": "Exam strategy",
+      "tags": ["timing", "exam"]
+    },
+    {
+      "seed_key": "tip-task1-data-selection",
+      "category": "task_1_structure",
+      "title": "Select Data, Do Not List Data",
+      "body": "Choose numbers that prove the main trends or contrasts. If a number does not help explain a pattern, it probably does not need to be included.",
+      "descriptor": "Task Achievement",
+      "tags": ["task 1", "data"]
+    },
+    {
+      "seed_key": "tip-phrase-bank-use",
+      "category": "phrase_bank",
+      "title": "Use Phrases as Tools, Not Templates",
+      "body": "Copying a useful phrase is fine, but the sentence around it must match the data or argument. Change grammar, tense, and nouns so the phrase fits naturally.",
+      "descriptor": "Lexical Resource",
+      "tags": ["phrases", "vocabulary"]
+    }
+  ]
+}

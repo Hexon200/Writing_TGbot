@@ -224,6 +224,11 @@ async def main() -> None:
     bot = Bot(token=token)
     dp = Dispatcher()
     dp.include_router(router)
+    
+    # Delete existing webhook to clear conflicts with long-polling
+    print("[INFO] Deleting existing webhook if any...")
+    await bot.delete_webhook(drop_pending_updates=True)
+    
     asyncio.create_task(daily_phrase_loop(bot))
     await dp.start_polling(bot)
 

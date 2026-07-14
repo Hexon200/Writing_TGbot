@@ -5,8 +5,8 @@
 # FastAPI lifespan will also call init_db() and ensure_seeded() automatically.
 
 # 2. Start the FastAPI backend server in the background
-echo "[INFO] Starting FastAPI Backend on port ${PORT:-8010}..."
-uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8010} &
+echo "[INFO] Starting FastAPI Backend on port ${PORT:-8080}..."
+uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8080} &
 
 # 3. Start the Telegram Bot in the foreground
 echo "[INFO] Starting Telegram Bot..."

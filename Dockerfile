@@ -21,7 +21,7 @@ RUN mkdir -p data
 RUN sed -i 's/\r$//' start.sh && chmod +x start.sh
 
 # Expose port (Railway will override this with its own $PORT environment variable)
-EXPOSE 8010
+EXPOSE 8080
 
 # Launch the unified startup script
 CMD ["./start.sh"]

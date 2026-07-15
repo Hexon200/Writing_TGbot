@@ -120,6 +120,10 @@ async function renderTab(tab) {
     viewTitle.textContent = "Phrases";
     return renderPhrases();
   }
+  if (tab === "quiz") {
+    viewTitle.textContent = "Quiz";
+    return renderQuiz();
+  }
   if (tab === "tips") {
     viewTitle.textContent = "Tips";
     return renderTips();
@@ -191,6 +195,102 @@ async function renderBookmarks() {
     });
     content.append(grid(cards));
   }
+}
+
+async function renderQuiz() {
+  clearSearch();
+  content.innerHTML = "";
+  const data = await fetchJson(`/api/quiz/next?telegram_user_id=${encodeURIComponent(state.userId)}`);
+  if (data.source !== "due_bookmark") {
+    content.append(caughtUpPanel(data));
+  }
+  content.append(quizCard(data));
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function caughtUpPanel(data) {
+  const stats = data.stats || {};
+  const total = stats.total_bookmarked || 0;
+  const reviewed = stats.reviewed_count || 0;
+  const percent = total ? Math.round((reviewed / total) * 100) : 100;
+  const panel = el("section", "caught-up detail-panel");
+  panel.innerHTML = `
+    <div class="meta"><span class="pill">${data.is_new ? "Discovery" : "Review"}</span></div>
+    <h2 class="title">You are all caught up.</h2>
+    <p class="muted">${data.is_new ? "No phrase bookmarks yet. Try this starter card and it will enter your review queue." : "No bookmarked phrases are due right now. This practice card keeps the rhythm warm."}</p>
+    <div class="progress-meter" aria-label="Review progress">
+      <span style="width: ${percent}%"></span>
+    </div>
+    <div class="progress-bars" aria-hidden="true">
+      ${[0, 1, 2, 3, 4].map((index) => `<span class="${index * 20 < percent ? "active" : ""}"></span>`).join("")}
+    </div>
+    <div class="meta">
+      <span>${stats.due_count || 0} due</span>
+      <span>${total} saved phrases</span>
+      <span>${percent}% clear</span>
+    </div>
+  `;
+  return panel;
+}
+
+function quizCard(data) {
+  const phrase = data.phrase;
+  const card = el("article", "quiz-card");
+  card.innerHTML = `
+    <div class="card-header">
+      <div>
+        <div class="meta">
+          <span class="pill">${data.source === "due_bookmark" ? "Due now" : data.is_new ? "New phrase" : "Practice"}</span>
+          <span>${labelFor(phrase.category)}</span>
+        </div>
+        <div class="quiz-prompt">${escapeHtml(phrase.phrase)}</div>
+      </div>
+    </div>
+    <div class="quiz-answer hidden">
+      <p class="phrase-example">${escapeHtml(phrase.example)}</p>
+      ${phrase.band_note ? `<p class="band-note">${escapeHtml(phrase.band_note)}</p>` : ""}
+    </div>
+    <div class="quiz-actions">
+      <button type="button" class="primary-action">Show example</button>
+      <div class="rating-row hidden">
+        <button type="button" class="rating-button again" data-quality="1">Again</button>
+        <button type="button" class="rating-button good" data-quality="3">Good</button>
+        <button type="button" class="rating-button easy" data-quality="5">Easy</button>
+      </div>
+    </div>
+    <div class="quiz-feedback muted" aria-live="polite"></div>
+  `;
+  const answer = card.querySelector(".quiz-answer");
+  const flip = card.querySelector(".primary-action");
+  const ratings = card.querySelector(".rating-row");
+  const feedback = card.querySelector(".quiz-feedback");
+  flip.addEventListener("click", () => {
+    answer.classList.remove("hidden");
+    ratings.classList.remove("hidden");
+    flip.classList.add("hidden");
+    card.classList.add("flipped");
+  });
+  ratings.querySelectorAll("button").forEach((button) => {
+    button.addEventListener("click", async () => {
+      const quality = Number(button.dataset.quality);
+      card.classList.add("reviewed");
+      feedback.textContent = "Scheduling...";
+      const result = await fetchJson("/api/quiz/answer", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          telegram_user_id: state.userId,
+          item_id: data.item_id,
+          quality,
+        }),
+      });
+      state.bookmarks.add(bookmarkKey("phrase", data.item_id));
+      feedback.textContent = `Next review in ${result.interval} day${result.interval === 1 ? "" : "s"}.`;
+      tg?.HapticFeedback?.notificationOccurred?.("success");
+      window.setTimeout(() => renderQuiz(), 700);
+    });
+  });
+  return card;
 }
 
 function sampleCard(sample) {
@@ -381,7 +481,7 @@ async function handleSearch() {
   if (!total) {
     panel.append(emptyState("No results."));
   } else {
-    panel.append(searchSection("Samples", data.samples, (item) => `Task ${item.task_type} · Band ${item.band_score}`, (item) => renderSampleDetail(item.id)));
+    panel.append(searchSection("Samples", data.samples, (item) => `Task ${item.task_type} \u00b7 Band ${item.band_score}`, (item) => renderSampleDetail(item.id)));
     panel.append(searchSection("Phrases", data.phrases, (item) => labelFor(item.category), (item) => openPhraseSheet(item)));
     panel.append(searchSection("Tips", data.tips, (item) => labelFor(item.category), (item) => renderSingleTip(item)));
   }
@@ -420,11 +520,11 @@ function bookmarkButton(type, id) {
   button.className = "bookmark-button";
   button.title = "Bookmark";
   const key = bookmarkKey(type, id);
-  button.textContent = state.bookmarks.has(key) ? "★" : "☆";
+  button.textContent = state.bookmarks.has(key) ? "\u2605" : "\u2606";
   button.addEventListener("click", async (event) => {
     event.stopPropagation();
     await toggleBookmark(type, id);
-    button.textContent = state.bookmarks.has(key) ? "★" : "☆";
+    button.textContent = state.bookmarks.has(key) ? "\u2605" : "\u2606";
   });
   return button;
 }
@@ -434,14 +534,14 @@ function copyButton(text) {
   button.type = "button";
   button.className = "copy-button";
   button.title = "Copy";
-  button.textContent = "⧉";
+  button.textContent = "\u29c9";
   button.addEventListener("click", async (event) => {
     event.stopPropagation();
     await copyText(text);
     tg?.HapticFeedback?.notificationOccurred?.("success");
-    button.textContent = "✓";
+    button.textContent = "\u2713";
     window.setTimeout(() => {
-      button.textContent = "⧉";
+      button.textContent = "\u29c9";
     }, 900);
   });
   return button;
@@ -474,7 +574,7 @@ function closeButton() {
   button.type = "button";
   button.className = "close-button";
   button.title = "Close";
-  button.textContent = "×";
+  button.textContent = "\u00d7";
   button.addEventListener("click", closePhraseSheet);
   return button;
 }

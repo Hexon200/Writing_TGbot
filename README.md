@@ -33,11 +33,31 @@ python -m app.bot
 Commands:
 
 - `/random` sends a random phrase, sample, or tip.
+- `/quiz` sends a native Telegram quiz poll from the phrase bank.
 - `/daily_on` enables daily phrase pushes for the Telegram user.
 - `/daily_off` disables daily phrase pushes.
 - Inline mode searches phrase-bank entries when users type `@yourbot comparing`.
 
 Telegram inline mode must be enabled in BotFather.
+
+Bookmarked phrases use SM-2 spaced repetition. Due phrase reviews can be sent by the bot with Hard, Good, and Easy buttons, and the Mini App Quiz tab uses the same schedule through `/api/quiz/next` and `/api/quiz/answer`.
+
+## Railway Hosting
+
+The Docker startup script runs only FastAPI. In production, Telegram updates are handled by the FastAPI webhook endpoint at `/telegram/webhook`, so Railway does not use polling and will not hit `terminated by other getUpdates request`.
+
+Set these Railway variables:
+
+```text
+TELEGRAM_BOT_TOKEN=your_bot_token
+WEBAPP_URL=https://your-railway-domain.up.railway.app
+BOT_MODE=webhook
+TELEGRAM_WEBHOOK_SECRET=any-long-random-string
+```
+
+If you set `TELEGRAM_WEBHOOK_URL`, it must be the full webhook URL, for example `https://your-domain/telegram/webhook`. Otherwise the app builds it from `WEBAPP_URL`.
+
+Do not run `python -m app.bot` on Railway unless you intentionally switch back to polling and stop every other bot copy.
 
 ## Content Editing
 
@@ -66,4 +86,5 @@ The backend resolves `phrase-slug` to a phrase-bank entry and sends structured t
 - `GET /api/bookmarks?telegram_user_id=123`
 - `POST /api/bookmarks`
 - `DELETE /api/bookmarks`
-
+- `GET /api/quiz/next?telegram_user_id=123`
+- `POST /api/quiz/answer`

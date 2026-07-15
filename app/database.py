@@ -67,16 +67,21 @@ CREATE TABLE IF NOT EXISTS bookmarks (
     telegram_user_id TEXT NOT NULL,
     item_type TEXT NOT NULL CHECK (item_type IN ('sample', 'phrase', 'tip')),
     item_id INTEGER NOT NULL,
+    interval INTEGER NOT NULL DEFAULT 0,
+    repetition INTEGER NOT NULL DEFAULT 0,
+    easiness_factor REAL NOT NULL DEFAULT 2.5,
+    next_review_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
     created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
     UNIQUE (telegram_user_id, item_type, item_id)
 );
 
 CREATE INDEX IF NOT EXISTS idx_bookmarks_user ON bookmarks(telegram_user_id, created_at DESC);
-
 CREATE TABLE IF NOT EXISTS user_settings (
     telegram_user_id TEXT PRIMARY KEY,
     daily_phrase_enabled INTEGER NOT NULL DEFAULT 0,
     last_daily_sent_date TEXT,
+    last_daily_quiz_date TEXT,
+    last_review_push_date TEXT,
     last_daily_phrase_id INTEGER,
     created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
@@ -103,6 +108,45 @@ def get_connection() -> sqlite3.Connection:
 def init_db() -> None:
     with get_connection() as conn:
         conn.executescript(SCHEMA)
+        _migrate_bookmarks(conn)
+
+
+def _migrate_bookmarks(conn: sqlite3.Connection) -> None:
+    columns = {row["name"] for row in conn.execute("PRAGMA table_info(bookmarks)").fetchall()}
+    migrations = [
+        ("interval", "ALTER TABLE bookmarks ADD COLUMN interval INTEGER NOT NULL DEFAULT 0"),
+        ("repetition", "ALTER TABLE bookmarks ADD COLUMN repetition INTEGER NOT NULL DEFAULT 0"),
+        ("easiness_factor", "ALTER TABLE bookmarks ADD COLUMN easiness_factor REAL NOT NULL DEFAULT 2.5"),
+        ("next_review_at", "ALTER TABLE bookmarks ADD COLUMN next_review_at TEXT"),
+    ]
+    for column, statement in migrations:
+        if column not in columns:
+            conn.execute(statement)
+    conn.execute(
+        """
+        UPDATE bookmarks
+        SET next_review_at = CURRENT_TIMESTAMP
+        WHERE next_review_at IS NULL OR next_review_at = ''
+        """
+    )
+    conn.execute(
+        """
+        CREATE INDEX IF NOT EXISTS idx_bookmarks_review_due
+        ON bookmarks(telegram_user_id, item_type, next_review_at)
+        """
+    )
+    _migrate_user_settings(conn)
+
+
+def _migrate_user_settings(conn: sqlite3.Connection) -> None:
+    columns = {row["name"] for row in conn.execute("PRAGMA table_info(user_settings)").fetchall()}
+    migrations = [
+        ("last_daily_quiz_date", "ALTER TABLE user_settings ADD COLUMN last_daily_quiz_date TEXT"),
+        ("last_review_push_date", "ALTER TABLE user_settings ADD COLUMN last_review_push_date TEXT"),
+    ]
+    for column, statement in migrations:
+        if column not in columns:
+            conn.execute(statement)
 
 
 def table_count(table_name: str) -> int:
@@ -110,4 +154,3 @@ def table_count(table_name: str) -> int:
         raise ValueError(f"Unexpected table name: {table_name}")
     with get_connection() as conn:
         return int(conn.execute(f"SELECT COUNT(*) FROM {table_name}").fetchone()[0])
-

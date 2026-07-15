@@ -4,10 +4,7 @@
 # Since we use volume mount for the "data" directory, we verify if it exists.
 # FastAPI lifespan will also call init_db() and ensure_seeded() automatically.
 
-# 2. Start the FastAPI backend server in the background
+# 2. Run FastAPI in the foreground. Telegram updates are handled by FastAPI webhook mode.
 echo "[INFO] Starting FastAPI Backend on port ${PORT:-8080}..."
-uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8080} &
-
-# 3. Start the Telegram Bot in the foreground
-echo "[INFO] Starting Telegram Bot..."
-python -m app.bot
+export BOT_MODE=${BOT_MODE:-webhook}
+exec uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8080}
